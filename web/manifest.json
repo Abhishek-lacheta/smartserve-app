@@ -1,6 +1,6 @@
 {
-    "name": "smartserve_temp",
-    "short_name": "smartserve_temp",
+    "name": "smartserve",
+    "short_name": "smartserve",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -1,4 +1,5 @@
 allprojects {
+    extra.set("kotlin_version", "2.3.0")
     repositories {
         google()
         mavenCentral()

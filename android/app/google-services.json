@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "395109495964",
+    "project_id": "smartserve-c5991",
+    "storage_bucket": "smartserve-c5991.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395109495964:android:805a0a6ce1de1526856959",
+        "android_client_info": {
+          "package_name": "com.example.smartserve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395109495964-90flf76g1f1lejkpv4k1268r56kmqjll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartserve",
+            "certificate_hash": "4e11b7172ea71acf3104709a44872ef7adeabe62"
+          }
+        },
+        {
+          "client_id": "395109495964-9qgri340altsfegqvs8k2iipsiicvoi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF6e6mu34s_-xmCQbi5OisICZYGHhP3Og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395109495964-9qgri340altsfegqvs8k2iipsiicvoi6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

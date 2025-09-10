@@ -5,3 +5,7 @@ import '../../core/usecases/usecase.dart';
 import '../entities/user_entity.dart';
 import '../repositories/i_auth_repository.dart';
 
+@injectable
+/// Executes the business logic bridging the domain and data layers.
+/// Executes the business logic bridging the domain and data layers.
+/// Executes the business logic bridging the domain and data layers.

@@ -5,3 +5,9 @@ import '../models/user_model.dart';
 
 /// Provides core implementation and business logic properties.
 class AuthRepository {
+  final FirebaseAuthDataSource _authDataSource;
+  final FirestoreDataSource _firestoreDataSource;
+
+  AuthRepository({
+    FirebaseAuthDataSource? authDataSource,
+    FirestoreDataSource? firestoreDataSource,

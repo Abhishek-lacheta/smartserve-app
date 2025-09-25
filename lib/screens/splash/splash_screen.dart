@@ -6,3 +6,11 @@ import '../home/main_navigation.dart';
 import '../../core/theme/app_colors.dart';
 import '../../presentation/auth/bloc/auth_bloc.dart';
 import '../../presentation/auth/bloc/auth_state.dart';
+
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});

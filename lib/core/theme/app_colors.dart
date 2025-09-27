@@ -11,3 +11,9 @@ class AppColors {
   static const Color primaryOrange = Color(0xFFFFAE00);
 
   // Background and Surface
+  static const Color background = Color(0xFFFFFFFF);
+  static const Color surface = Color(0xFFFFFFFF);
+
+  // Text Colors
+  static const Color textPrimary = Color(0xFF1E1E1E); // Dark text
+  static const Color textSecondary = Color(0xFF7D7D7D); // Grey text

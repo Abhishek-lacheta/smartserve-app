@@ -6,3 +6,13 @@ import '../home/main_navigation.dart';
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 class OtpVerificationScreen extends StatelessWidget {
+  const OtpVerificationScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.background,
+      appBar: AppBar(
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(

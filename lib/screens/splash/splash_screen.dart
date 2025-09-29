@@ -14,3 +14,8 @@ import '../../presentation/auth/bloc/auth_state.dart';
 /// Provides core implementation and business logic properties.
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+
+

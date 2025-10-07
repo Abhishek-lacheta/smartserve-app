@@ -5,3 +5,6 @@ import 'package:injectable/injectable.dart';
 @lazySingleton
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.

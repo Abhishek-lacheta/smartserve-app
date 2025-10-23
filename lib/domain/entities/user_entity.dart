@@ -19,3 +19,10 @@ class UserEntity extends Equatable {
     this.profileImage,
   });
 
+  @override
+  List<Object?> get props => [uid, name, email, profileImage];
+
+
+
+
+

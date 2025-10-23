@@ -9,11 +9,3 @@ class ProductCard extends StatelessWidget {
   final String title;
   final String price;
   final double rating;
-  final int reviews;
-  final IconData placeholderIcon;
-
-  const ProductCard({
-    super.key,
-    required this.title,
-    required this.price,
-    required this.rating,

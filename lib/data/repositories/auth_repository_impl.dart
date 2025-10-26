@@ -5,3 +5,7 @@ import '../../domain/entities/user_entity.dart';
 import '../../domain/repositories/i_auth_repository.dart';
 import '../datasources/firebase_auth_datasource.dart';
 import '../datasources/firestore_datasource.dart';
+import '../models/user_model.dart';
+
+@LazySingleton(as: IAuthRepository)
+/// Provides core implementation and business logic properties.

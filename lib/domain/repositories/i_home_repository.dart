@@ -6,3 +6,10 @@ import '../entities/home_item_entity.dart';
 abstract class IHomeRepository {
   Future<Either<Failure, List<String>>> getTopCategories();
   Future<Either<Failure, List<CategoryEntity>>> getCategories();
+  Future<Either<Failure, List<HomeItemEntity>>> getHomeItems();
+
+
+
+
+
+

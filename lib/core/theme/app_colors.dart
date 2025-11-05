@@ -17,3 +17,11 @@ class AppColors {
   // Text Colors
   static const Color textPrimary = Color(0xFF1E1E1E); // Dark text
   static const Color textSecondary = Color(0xFF7D7D7D); // Grey text
+
+  // Borders & Accents
+  static const Color borderLight = Color(0xFFEFEFEF);
+  static const Color inputBackground = Color(0xFFFFFFFF);
+  static const Color inputBorder = Color(0xFFF3F3F3);
+  static const Color shadowColor = Color(0x1A000000); // 10% opacity black
+  
+  // Specific Widget Colors

@@ -5,3 +5,7 @@ import '../../widgets/luxeloft_logo.dart';
 import '../../widgets/product_card.dart';
 
 import '../../presentation/home/bloc/home_bloc.dart';
+import '../../presentation/home/bloc/home_event.dart';
+import '../../presentation/home/bloc/home_state.dart';
+import '../../presentation/auth/bloc/auth_bloc.dart';
+import '../../presentation/auth/bloc/auth_event.dart';

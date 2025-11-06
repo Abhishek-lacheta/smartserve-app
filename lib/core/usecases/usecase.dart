@@ -7,3 +7,11 @@ import 'failure.dart';
 /// [Params] are the parameters required to execute the UseCase.
 abstract class UseCase<Type, Params> {
   Future<Either<Failure, Type>> call(Params params);
+
+
+
+
+
+
+
+}

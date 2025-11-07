@@ -16,3 +16,7 @@ import 'home_state.dart';
 /// reduces screen loading time. If any single UseCase fails, we map it to a [HomeError] state.
 @injectable
 /// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+class HomeBloc extends Bloc<HomeEvent, HomeState> {

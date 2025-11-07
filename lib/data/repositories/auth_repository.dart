@@ -11,3 +11,6 @@ class AuthRepository {
   AuthRepository({
     FirebaseAuthDataSource? authDataSource,
     FirestoreDataSource? firestoreDataSource,
+  })  : _authDataSource = authDataSource ?? FirebaseAuthDataSource(),
+        _firestoreDataSource = firestoreDataSource ?? FirestoreDataSource();
+

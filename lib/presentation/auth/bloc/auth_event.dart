@@ -11,3 +11,13 @@ abstract class AuthEvent extends Equatable {
 
 
 
+}
+
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class CheckAuthStatus extends AuthEvent {}
+
+class SignInRequested extends AuthEvent {}

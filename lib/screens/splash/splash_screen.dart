@@ -23,3 +23,12 @@ class SplashScreen extends StatefulWidget {
 
 }
 
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    _navigateToNext();
+  }
+
+  _navigateToNext() async {
+    await Future.delayed(const Duration(seconds: 2));

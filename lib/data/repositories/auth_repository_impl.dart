@@ -9,3 +9,13 @@ import '../models/user_model.dart';
 
 @LazySingleton(as: IAuthRepository)
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class AuthRepositoryImpl implements IAuthRepository {
+  final FirebaseAuthDataSource _authDataSource;
+  final FirestoreDataSource _firestoreDataSource;
+
+  AuthRepositoryImpl(
+    this._authDataSource,

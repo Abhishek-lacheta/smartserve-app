@@ -4,3 +4,5 @@ import 'firebase_options.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/theme/app_theme.dart';
 import 'screens/splash/splash_screen.dart';
+import 'core/di/injection.dart';
+import 'presentation/auth/bloc/auth_bloc.dart';

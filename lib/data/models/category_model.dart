@@ -18,3 +18,13 @@ class CategoryModel extends CategoryEntity {
   });
 
   Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'iconName': iconName,
+    };
+
+
+
+
+  }

@@ -16,3 +16,5 @@ class HomeRepository {
   HomeRepository({FirestoreDataSource? firestoreDataSource})
       : _firestoreDataSource = firestoreDataSource ?? FirestoreDataSource();
 
+  Future<List<String>> getTopCategories() async {
+    try {

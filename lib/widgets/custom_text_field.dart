@@ -11,3 +11,13 @@ class CustomTextField extends StatelessWidget {
   final String hintText;
   final Widget? prefixIcon;
   final Widget? suffixIcon;
+  final bool obscureText;
+  final TextInputType keyboardType;
+
+  const CustomTextField({
+    super.key,
+    required this.hintText,
+    this.prefixIcon,
+    this.suffixIcon,
+    this.obscureText = false,
+    this.keyboardType = TextInputType.text,

@@ -8,3 +8,5 @@ abstract class RegisterModule {
   FirebaseAuth get firebaseAuth => FirebaseAuth.instance;
 
   @lazySingleton
+  FirebaseFirestore get firestore => FirebaseFirestore.instance;
+}

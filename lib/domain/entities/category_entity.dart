@@ -14,3 +14,13 @@ class CategoryEntity extends Equatable {
     required this.title,
     required this.iconName,
   });
+
+  IconData get icon {
+    switch (iconName) {
+      case 'face':
+        return Icons.face;
+      case 'local_offer':
+        return Icons.local_offer;
+      case 'checkroom':
+        return Icons.checkroom;
+      case 'home':

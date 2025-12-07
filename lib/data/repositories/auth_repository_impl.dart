@@ -19,3 +19,12 @@ class AuthRepositoryImpl implements IAuthRepository {
 
   AuthRepositoryImpl(
     this._authDataSource,
+    this._firestoreDataSource,
+  );
+
+  @override
+  Stream<UserEntity?> get authStateChanges => _authDataSource.authStateChanges.map((user) {
+        if (user == null) return null;
+        return UserEntity(
+          uid: user.uid,
+          name: user.displayName ?? 'Unknown',

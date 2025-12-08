@@ -28,3 +28,12 @@ class AuthRepositoryImpl implements IAuthRepository {
         return UserEntity(
           uid: user.uid,
           name: user.displayName ?? 'Unknown',
+          email: user.email ?? 'No email',
+          profileImage: user.photoURL,
+        );
+      });
+
+  @override
+  UserEntity? get currentUser {
+    final user = _authDataSource.currentUser;
+    if (user == null) return null;

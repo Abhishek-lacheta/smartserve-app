@@ -12,3 +12,6 @@ import '../../presentation/auth/bloc/auth_bloc.dart';
 import '../../presentation/auth/bloc/auth_event.dart';
 import '../../presentation/auth/bloc/auth_state.dart';
 
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.

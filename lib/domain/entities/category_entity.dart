@@ -24,3 +24,5 @@ class CategoryEntity extends Equatable {
       case 'checkroom':
         return Icons.checkroom;
       case 'home':
+        return Icons.home;
+      case 'dry_cleaning':

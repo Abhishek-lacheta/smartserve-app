@@ -25,6 +25,3 @@ class CategoryModel extends CategoryEntity {
     };
 
 
-
-
-  }

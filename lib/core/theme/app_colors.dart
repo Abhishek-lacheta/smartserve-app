@@ -25,3 +25,8 @@ class AppColors {
   static const Color shadowColor = Color(0x1A000000); // 10% opacity black
   
   // Specific Widget Colors
+  static const Color iconGrey = Color(0xFFB0B0B0);
+  static const Color cardYellowShadow = Color(0x33FFAE00); // 20% opacity orange
+  static const Color splashLogoCyan = Color(0xFF1CA3B5);
+  static const Color splashLogoOrange = Color(0xFFFF9500);
+

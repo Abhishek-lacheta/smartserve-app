@@ -18,3 +18,12 @@ abstract class Failure extends Equatable {
 
 /// Represents a failure originating from server/network issues.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.

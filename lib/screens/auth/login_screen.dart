@@ -15,3 +15,12 @@ import '../../presentation/auth/bloc/auth_state.dart';
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BlocListener<AuthBloc, AuthState>(
+      listener: (context, state) {
+        if (state is AuthAuthenticated) {
+          ScaffoldMessenger.of(context).showSnackBar(

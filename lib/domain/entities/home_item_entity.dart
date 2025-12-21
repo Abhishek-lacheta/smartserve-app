@@ -18,3 +18,5 @@ class HomeItemEntity extends Equatable {
     required this.title,
     required this.price,
     required this.rating,
+    required this.reviews,
+    required this.iconName,

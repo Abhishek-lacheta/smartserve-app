@@ -31,3 +31,8 @@ class CategoryEntity extends Equatable {
         return Icons.shopping_bag;
       case 'accessibility_new':
         return Icons.accessibility_new;
+      case 'phone_iphone':
+        return Icons.phone_iphone;
+      default:
+        return Icons.category;
+

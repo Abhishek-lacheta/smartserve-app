@@ -8,3 +8,11 @@ import '../repositories/i_home_repository.dart';
 
 @injectable
 /// Executes the business logic bridging the domain and data layers.
+/// Executes the business logic bridging the domain and data layers.
+/// Executes the business logic bridging the domain and data layers.
+/// Executes the business logic bridging the domain and data layers.
+class GetTopCategoriesUseCase implements UseCase<List<String>, NoParams> {
+  final IHomeRepository repository;
+
+  GetTopCategoriesUseCase(this.repository);
+

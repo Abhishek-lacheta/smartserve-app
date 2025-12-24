@@ -9,3 +9,8 @@ import '../../presentation/home/bloc/home_event.dart';
 import '../../presentation/home/bloc/home_state.dart';
 import '../../presentation/auth/bloc/auth_bloc.dart';
 import '../../presentation/auth/bloc/auth_event.dart';
+import '../../presentation/auth/bloc/auth_state.dart';
+import '../auth/login_screen.dart';
+
+/// Provides core implementation and business logic properties.
+class HomeScreen extends StatefulWidget {

@@ -15,3 +15,13 @@ abstract class UseCase<Type, Params> {
 
 
 }
+
+/// A class representing no parameters for UseCases that don't need any.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class NoParams extends Equatable {
+  @override
+  List<Object?> get props => [];

@@ -7,3 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
 @lazySingleton
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class FirestoreDataSource {
+  final FirebaseFirestore _firestore;
+
+  FirestoreDataSource({FirebaseFirestore? firestore})

@@ -11,3 +11,6 @@ import '../repositories/i_auth_repository.dart';
 /// Executes the business logic bridging the domain and data layers.
 /// Executes the business logic bridging the domain and data layers.
 /// Executes the business logic bridging the domain and data layers.
+class SignInWithGoogleUseCase implements UseCase<UserEntity, NoParams> {
+  final IAuthRepository repository;
+

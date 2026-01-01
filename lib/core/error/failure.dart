@@ -29,3 +29,13 @@ abstract class Failure extends Equatable {
 /// Provides core implementation and business logic properties.
 class ServerFailure extends Failure {
   const ServerFailure(String message) : super(message);
+}
+
+/// Represents a failure related to authentication.
+class AuthFailure extends Failure {
+  const AuthFailure(String message) : super(message);
+}
+
+/// Represents an unknown or unexpected failure.
+class UnknownFailure extends Failure {
+  const UnknownFailure(String message) : super(message);

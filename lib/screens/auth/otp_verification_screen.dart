@@ -14,3 +14,6 @@ class OtpVerificationScreen extends StatelessWidget {
       backgroundColor: AppColors.background,
       appBar: AppBar(
         leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            decoration: BoxDecoration(

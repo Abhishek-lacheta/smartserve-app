@@ -11,3 +11,10 @@ import '../auth/login_screen.dart';
 /// Provides core implementation and business logic properties.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
+
+  @override
+  State<OnboardingScreen> createState() => _OnboardingScreenState();
+
+
+
+

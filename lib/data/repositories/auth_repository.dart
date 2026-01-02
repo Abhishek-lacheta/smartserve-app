@@ -14,3 +14,8 @@ class AuthRepository {
   })  : _authDataSource = authDataSource ?? FirebaseAuthDataSource(),
         _firestoreDataSource = firestoreDataSource ?? FirestoreDataSource();
 
+  Stream<User?> get authStateChanges => _authDataSource.authStateChanges;
+  
+  User? get currentUser => _authDataSource.currentUser;
+
+  Future<User?> signInWithGoogle() async {

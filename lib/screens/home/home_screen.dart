@@ -14,3 +14,12 @@ import '../auth/login_screen.dart';
 
 /// Provides core implementation and business logic properties.
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+
+
+
+}
+

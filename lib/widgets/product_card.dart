@@ -12,3 +12,5 @@ class ProductCard extends StatelessWidget {
   final int reviews;
   final IconData placeholderIcon;
 
+  const ProductCard({
+    super.key,

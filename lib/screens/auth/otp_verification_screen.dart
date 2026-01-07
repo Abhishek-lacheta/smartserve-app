@@ -17,3 +17,10 @@ class OtpVerificationScreen extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Container(
             decoration: BoxDecoration(
+              color: AppColors.primaryCyan.withOpacity(0.1),
+              shape: BoxShape.circle,
+            ),
+            child: IconButton(
+              icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: AppColors.primaryCyan),
+              onPressed: () => Navigator.pop(context),
+            ),

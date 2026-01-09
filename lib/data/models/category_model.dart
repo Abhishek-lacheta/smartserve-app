@@ -21,7 +21,3 @@ class CategoryModel extends CategoryEntity {
     return {
       'id': id,
       'title': title,
-      'iconName': iconName,
-    };
-
-

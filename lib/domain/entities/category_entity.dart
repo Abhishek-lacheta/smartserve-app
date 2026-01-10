@@ -36,3 +36,6 @@ class CategoryEntity extends Equatable {
       default:
         return Icons.category;
 
+
+
+

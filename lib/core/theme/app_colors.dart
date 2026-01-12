@@ -30,3 +30,8 @@ class AppColors {
   static const Color splashLogoCyan = Color(0xFF1CA3B5);
   static const Color splashLogoOrange = Color(0xFFFF9500);
 
+
+
+
+
+

@@ -6,3 +6,6 @@ import 'core/theme/app_theme.dart';
 import 'screens/splash/splash_screen.dart';
 import 'core/di/injection.dart';
 import 'presentation/auth/bloc/auth_bloc.dart';
+import 'presentation/auth/bloc/auth_event.dart';
+import 'presentation/home/bloc/home_bloc.dart';
+

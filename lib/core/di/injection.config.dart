@@ -13,3 +13,7 @@ import 'package:firebase_auth/firebase_auth.dart' as _i3;
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i4;
 
+import '../../data/datasources/firebase_auth_datasource.dart' as _i5;
+import '../../data/datasources/firestore_datasource.dart' as _i6;
+import '../../data/repositories/auth_repository_impl.dart' as _i8;
+import '../../data/repositories/home_repository_impl.dart' as _i10;

@@ -39,3 +39,4 @@ class AuthFailure extends Failure {
 /// Represents an unknown or unexpected failure.
 class UnknownFailure extends Failure {
   const UnknownFailure(String message) : super(message);
+}

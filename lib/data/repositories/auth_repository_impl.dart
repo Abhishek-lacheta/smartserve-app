@@ -45,3 +45,11 @@ class AuthRepositoryImpl implements IAuthRepository {
     );
 
 
+
+
+
+  }
+
+  @override
+  Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    try {

@@ -13,3 +13,9 @@ import '../models/category_model.dart';
 class HomeRepository {
   final FirestoreDataSource _firestoreDataSource;
 
+  HomeRepository({FirestoreDataSource? firestoreDataSource})
+      : _firestoreDataSource = firestoreDataSource ?? FirestoreDataSource();
+
+  Future<List<String>> getTopCategories() async {
+    try {
+      return await _firestoreDataSource.getTopCategories();

@@ -23,3 +23,8 @@ class HomeScreen extends StatefulWidget {
 
 }
 
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    context.read<HomeBloc>().add(LoadHomeData());

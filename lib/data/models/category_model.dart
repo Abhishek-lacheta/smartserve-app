@@ -24,3 +24,10 @@ class CategoryModel extends CategoryEntity {
       'iconName': iconName,
     };
 
+
+
+
+  }
+
+  factory CategoryModel.fromMap(Map<String, dynamic> map, String documentId) {
+    return CategoryModel(

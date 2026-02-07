@@ -11,3 +11,13 @@ import '../datasources/firestore_datasource.dart';
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class HomeRepositoryImpl implements IHomeRepository {
+  final FirestoreDataSource _firestoreDataSource;
+
+  HomeRepositoryImpl(this._firestoreDataSource);
+
+  @override
+  Future<Either<Failure, List<String>>> getTopCategories() async {
+    try {

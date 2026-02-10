@@ -13,3 +13,11 @@ class FirestoreDataSource {
   final FirebaseFirestore _firestore;
 
   FirestoreDataSource({FirebaseFirestore? firestore})
+      : _firestore = firestore ?? FirebaseFirestore.instance;
+
+  // Save User
+  Future<void> saveUser(UserModel user) async {
+    try {
+      final data = user.toMap();
+      data['updatedAt'] = FieldValue.serverTimestamp();
+      

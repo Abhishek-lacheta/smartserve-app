@@ -21,3 +21,8 @@ abstract class UseCase<Type, Params> {
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class NoParams extends Equatable {
+  @override
+  List<Object?> get props => [];
+}

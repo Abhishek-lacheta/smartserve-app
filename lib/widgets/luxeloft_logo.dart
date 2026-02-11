@@ -10,3 +10,10 @@ import '../core/theme/app_colors.dart';
 class LuxeLoftLogo extends StatelessWidget {
   final double size;
 
+  const LuxeLoftLogo({super.key, this.size = 60});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.end,

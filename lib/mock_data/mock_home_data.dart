@@ -28,3 +28,8 @@ class MockData {
     {
       'title': 'Multi Kit',
       'price': '\$500',
+      'rating': 4.6,
+      'reviews': 86,
+      'icon': Icons.brush,
+    },
+    {

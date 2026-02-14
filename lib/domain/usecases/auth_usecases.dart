@@ -14,3 +14,7 @@ import '../repositories/i_auth_repository.dart';
 class SignInWithGoogleUseCase implements UseCase<UserEntity, NoParams> {
   final IAuthRepository repository;
 
+  SignInWithGoogleUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, UserEntity>> call(NoParams params) async {

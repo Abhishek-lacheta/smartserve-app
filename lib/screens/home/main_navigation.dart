@@ -25,3 +25,11 @@ class _MainNavigationState extends State<MainNavigation> {
     const Scaffold(body: Center(child: Text('Message'))),
     const Scaffold(body: Center(child: Text('Cart'))),
     const Scaffold(body: Center(child: Text('Private'))),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _screens[_currentIndex],
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _currentIndex,

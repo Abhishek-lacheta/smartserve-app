@@ -14,3 +14,12 @@ class ProductCard extends StatelessWidget {
 
   const ProductCard({
     super.key,
+    required this.title,
+    required this.price,
+    required this.rating,
+    required this.reviews,
+    required this.placeholderIcon,
+  });
+
+  @override
+  Widget build(BuildContext context) {

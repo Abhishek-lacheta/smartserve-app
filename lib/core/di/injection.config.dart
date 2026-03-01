@@ -17,3 +17,13 @@ import '../../data/datasources/firebase_auth_datasource.dart' as _i5;
 import '../../data/datasources/firestore_datasource.dart' as _i6;
 import '../../data/repositories/auth_repository_impl.dart' as _i8;
 import '../../data/repositories/home_repository_impl.dart' as _i10;
+import '../../domain/repositories/i_auth_repository.dart' as _i7;
+import '../../domain/repositories/i_home_repository.dart' as _i9;
+import '../../domain/usecases/auth_usecases.dart' as _i11;
+import '../../domain/usecases/home_usecases.dart' as _i12;
+import '../../presentation/auth/bloc/auth_bloc.dart' as _i13;
+import '../../presentation/home/bloc/home_bloc.dart' as _i14;
+import 'register_module.dart' as _i15;
+
+extension GetItInjectableX on _i1.GetIt {
+// initializes the registration of main-scope dependencies inside of GetIt

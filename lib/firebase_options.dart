@@ -16,8 +16,3 @@ import 'package:flutter/foundation.dart'
 /// ```
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-class DefaultFirebaseOptions {
-  static FirebaseOptions get currentPlatform {

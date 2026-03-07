@@ -19,3 +19,5 @@ class FirebaseAuthDataSource {
     : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
 
   Future<void> _ensureGoogleSignInInitialized() async {
+    if (!_isGoogleSignInInitialized) {
+      // For google_sign_in version 7+, we must explicitly initialize and pass the serverClientId

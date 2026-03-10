@@ -38,3 +38,6 @@ class _MainNavigationState extends State<MainNavigation> {
         selectedItemColor: AppColors.primaryOrange,
         unselectedItemColor: AppColors.iconGrey,
         items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: 'Home',

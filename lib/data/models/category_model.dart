@@ -31,3 +31,9 @@ class CategoryModel extends CategoryEntity {
 
   factory CategoryModel.fromMap(Map<String, dynamic> map, String documentId) {
     return CategoryModel(
+      id: documentId,
+      title: map['title']?.toString() ?? '',
+      iconName: map['iconName']?.toString() ?? 'shopping_bag',
+    );
+  }
+}

@@ -10,3 +10,12 @@ class HomeItemModel extends HomeItemEntity {
     required super.title,
     required super.price,
     required super.rating,
+    required super.reviews,
+    required super.iconName,
+  });
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'title': title,
+      'price': price,

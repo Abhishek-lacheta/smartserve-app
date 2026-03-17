@@ -23,3 +23,7 @@ class FirebaseAuthDataSource {
       // For google_sign_in version 7+, we must explicitly initialize and pass the serverClientId
       // The serverClientId is the client_type: 3 ID found in android/app/google-services.json
       await GoogleSignIn.instance.initialize(
+        serverClientId: '395109495964-9qgri340altsfegqvs8k2iipsiicvoi6.apps.googleusercontent.com',
+      );
+      _isGoogleSignInInitialized = true;
+

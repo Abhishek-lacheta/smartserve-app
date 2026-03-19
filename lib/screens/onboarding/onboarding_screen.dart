@@ -29,3 +29,10 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   final List<Map<String, dynamic>> _onboardingData = [
     {
+      'title': 'ONLINE SHOPPING',
+      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra quam elementum massa, viverra. Ut turpis consectetur.',
+      'icon': Icons.shopping_cart_checkout,
+    },
+    {
+      'title': 'HOME DELIVER SERVICE',
+      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra quam elementum massa, viverra. Ut turpis consectetur.',

@@ -36,3 +36,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       'title': 'HOME DELIVER SERVICE',
       'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra quam elementum massa, viverra. Ut turpis consectetur.',
+      'icon': Icons.delivery_dining,
+    },
+    {
+      'title': 'ONLINE PAYMENT',
+      'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra quam elementum massa, viverra. Ut turpis consectetur.',

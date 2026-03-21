@@ -9,3 +9,9 @@ class SocialLoginButton extends StatelessWidget {
   final IconData icon;
   final Color? iconColor;
   final VoidCallback onPressed;
+
+  const SocialLoginButton({
+    super.key,
+    required this.text,
+    required this.icon,
+    required this.onPressed,

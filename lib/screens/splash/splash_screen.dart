@@ -33,3 +33,10 @@ class _SplashScreenState extends State<SplashScreen> {
   _navigateToNext() async {
     await Future.delayed(const Duration(seconds: 2));
     if (!mounted) return;
+    
+    final authState = context.read<AuthBloc>().state;
+    
+    if (authState is AuthAuthenticated) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const MainNavigation()),

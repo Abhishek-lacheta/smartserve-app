@@ -7,3 +7,7 @@ import 'otp_verification_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../presentation/auth/bloc/auth_bloc.dart';
 import '../../presentation/auth/bloc/auth_event.dart';
+import '../../presentation/auth/bloc/auth_state.dart';
+import '../home/main_navigation.dart';
+
+

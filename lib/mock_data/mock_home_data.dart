@@ -33,3 +33,13 @@ class MockData {
       'icon': Icons.brush,
     },
     {
+      'title': 'Lipstick',
+      'price': '\$400',
+      'rating': 4.6,
+      'reviews': 86,
+      'icon': Icons.color_lens,
+    },
+    {
+      'title': 'Face Cream',
+      'price': '\$300',
+      'rating': 4.5,

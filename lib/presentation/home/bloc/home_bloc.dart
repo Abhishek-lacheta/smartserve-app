@@ -20,3 +20,11 @@ import 'home_state.dart';
 /// Manages state transitions and events for this feature block.
 /// Manages state transitions and events for this feature block.
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
+  final GetTopCategoriesUseCase _getTopCategories;
+  final GetCategoriesUseCase _getCategories;
+  final GetHomeItemsUseCase _getHomeItems;
+
+  HomeBloc(
+    this._getTopCategories,
+    this._getCategories,
+    this._getHomeItems,

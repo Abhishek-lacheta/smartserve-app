@@ -25,7 +25,3 @@ class LoginScreen extends StatelessWidget {
         if (state is AuthAuthenticated) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
-              content: Text('User details saved successfully'),
-              backgroundColor: Colors.green,
-            ),
-          );

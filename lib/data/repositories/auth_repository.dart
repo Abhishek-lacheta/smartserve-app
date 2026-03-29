@@ -19,3 +19,9 @@ class AuthRepository {
   User? get currentUser => _authDataSource.currentUser;
 
   Future<User?> signInWithGoogle() async {
+    try {
+      final user = await _authDataSource.signInWithGoogle();
+      
+      if (user != null) {
+        // Create user model
+        final userModel = UserModel(

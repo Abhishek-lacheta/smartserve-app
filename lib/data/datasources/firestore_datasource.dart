@@ -21,3 +21,13 @@ class FirestoreDataSource {
       final data = user.toMap();
       data['updatedAt'] = FieldValue.serverTimestamp();
       
+      final docRef = _firestore.collection('users').doc(user.uid);
+      final snapshot = await docRef.get();
+      if (!snapshot.exists) {
+        data['createdAt'] = FieldValue.serverTimestamp();
+
+
+      }
+      
+      await docRef.set(data, SetOptions(merge: true));
+    } catch (e) {

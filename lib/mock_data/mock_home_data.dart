@@ -43,3 +43,6 @@ class MockData {
       'title': 'Face Cream',
       'price': '\$300',
       'rating': 4.5,
+      'reviews': 120,
+      'icon': Icons.spa,
+    },

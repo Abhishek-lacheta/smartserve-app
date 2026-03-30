@@ -39,3 +39,6 @@ class CategoryEntity extends Equatable {
 
 
 
+    }
+  }
+

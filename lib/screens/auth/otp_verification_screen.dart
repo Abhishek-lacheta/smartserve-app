@@ -23,3 +23,8 @@ class OtpVerificationScreen extends StatelessWidget {
             child: IconButton(
               icon: const Icon(Icons.arrow_back_ios_new, size: 18, color: AppColors.primaryCyan),
               onPressed: () => Navigator.pop(context),
+            ),
+          ),
+        ),
+      ),
+      body: SafeArea(

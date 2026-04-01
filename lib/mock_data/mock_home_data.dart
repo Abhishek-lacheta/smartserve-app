@@ -46,3 +46,9 @@ class MockData {
       'reviews': 120,
       'icon': Icons.spa,
     },
+    {
+      'title': 'Perfume',
+      'price': '\$800',
+      'rating': 4.8,
+      'reviews': 200,
+      'icon': Icons.water_drop,

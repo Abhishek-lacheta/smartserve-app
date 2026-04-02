@@ -28,3 +28,11 @@ class SignInWithGoogleUseCase implements UseCase<UserEntity, NoParams> {
   }
 }
 
+@injectable
+class SignOutUseCase implements UseCase<void, NoParams> {
+  final IAuthRepository repository;
+
+  SignOutUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, void>> call(NoParams params) async {

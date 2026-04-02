@@ -11,3 +11,13 @@ import '../../presentation/auth/bloc/auth_state.dart';
 import '../home/main_navigation.dart';
 
 
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class CreateAccountScreen extends StatelessWidget {
+  const CreateAccountScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {

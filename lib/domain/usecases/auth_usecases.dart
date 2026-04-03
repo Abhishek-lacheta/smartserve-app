@@ -36,3 +36,12 @@ class SignOutUseCase implements UseCase<void, NoParams> {
 
   @override
   Future<Either<Failure, void>> call(NoParams params) async {
+    return await repository.signOut();
+  }
+}
+
+@injectable
+class GetCurrentUserUseCase {
+  final IAuthRepository repository;
+
+  GetCurrentUserUseCase(this.repository);

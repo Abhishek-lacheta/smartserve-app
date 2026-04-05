@@ -25,3 +25,10 @@ class AuthRepository {
       if (user != null) {
         // Create user model
         final userModel = UserModel(
+          uid: user.uid,
+          name: user.displayName ?? 'Unknown User',
+          email: user.email ?? 'No email',
+          profileImage: user.photoURL,
+        );
+        
+        // Save to Firestore

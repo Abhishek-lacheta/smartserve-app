@@ -36,3 +36,8 @@ class CustomTextField extends StatelessWidget {
           suffixIcon: suffixIcon,
         ),
       ),
+    );
+
+
+  }
+}

@@ -23,10 +23,3 @@ class HomeRepository {
       throw Exception('Repository error fetching top categories: $e');
 
 
-
-
-
-
-
-
-    }

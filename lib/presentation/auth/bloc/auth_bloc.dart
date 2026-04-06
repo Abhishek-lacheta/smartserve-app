@@ -17,7 +17,3 @@ import 'auth_state.dart';
 /// out of the protected routes.
 @injectable
 /// Manages state transitions and events for this feature block.
-/// Manages state transitions and events for this feature block.
-/// Manages state transitions and events for this feature block.
-/// Manages state transitions and events for this feature block.
-/// Manages state transitions and events for this feature block.

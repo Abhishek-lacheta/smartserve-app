@@ -17,7 +17,3 @@ class GetTopCategoriesUseCase implements UseCase<List<String>, NoParams> {
   GetTopCategoriesUseCase(this.repository);
 
   @override
-  Future<Either<Failure, List<String>>> call(NoParams params) async {
-    return await repository.getTopCategories();
-
-

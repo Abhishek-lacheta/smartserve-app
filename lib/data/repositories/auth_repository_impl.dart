@@ -59,3 +59,7 @@ class AuthRepositoryImpl implements IAuthRepository {
         final userModel = UserModel(
           uid: user.uid,
           name: user.displayName ?? 'Unknown User',
+          email: user.email ?? 'No email',
+          profileImage: user.photoURL,
+        );
+        

@@ -15,3 +15,8 @@ class HomeItemEntity extends Equatable {
 
   const HomeItemEntity({
     required this.id,
+    required this.title,
+    required this.price,
+    required this.rating,
+    required this.reviews,
+    required this.iconName,

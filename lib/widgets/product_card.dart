@@ -38,3 +38,12 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          // Image Area
+          Expanded(
+            child: Stack(
+              children: [
+                Center(
+                  child: Icon(
+                    placeholderIcon,
+                    size: 80,
+                    color: AppColors.iconGrey.withOpacity(0.5),

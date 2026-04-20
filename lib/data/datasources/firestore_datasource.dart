@@ -31,3 +31,8 @@ class FirestoreDataSource {
       
       await docRef.set(data, SetOptions(merge: true));
     } catch (e) {
+      throw Exception('Failed to save user data: $e');
+    }
+  }
+
+  // Seed Firestore if Empty (to satisfy assignment requirements with exact UI)

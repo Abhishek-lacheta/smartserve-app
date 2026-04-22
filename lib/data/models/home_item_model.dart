@@ -14,8 +14,3 @@ class HomeItemModel extends HomeItemEntity {
     required super.iconName,
   });
 
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'title': title,
-      'price': price,

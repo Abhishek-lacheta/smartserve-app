@@ -52,3 +52,11 @@ class MockData {
       'rating': 4.8,
       'reviews': 200,
       'icon': Icons.water_drop,
+    },
+  ];
+
+
+
+
+
+}

@@ -47,3 +47,11 @@ class ProductCard extends StatelessWidget {
                     placeholderIcon,
                     size: 80,
                     color: AppColors.iconGrey.withOpacity(0.5),
+                  ),
+                ),
+                Positioned(
+                  top: 12,
+                  left: 12,
+                  child: Container(
+                    padding: const EdgeInsets.all(6),
+                    decoration: const BoxDecoration(

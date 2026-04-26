@@ -17,3 +17,9 @@ class LuxeLoftLogo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        // Custom L Shape using CustomPaint
+        CustomPaint(
+          size: Size(size, size),
+          painter: _LShapePainter(),
+        ),

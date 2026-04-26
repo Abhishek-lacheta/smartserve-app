@@ -42,6 +42,3 @@ class SignOutUseCase implements UseCase<void, NoParams> {
 
 @injectable
 class GetCurrentUserUseCase {
-  final IAuthRepository repository;
-
-  GetCurrentUserUseCase(this.repository);

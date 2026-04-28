@@ -15,3 +15,10 @@ class SocialLoginButton extends StatelessWidget {
     required this.text,
     required this.icon,
     required this.onPressed,
+    this.iconColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: onPressed,

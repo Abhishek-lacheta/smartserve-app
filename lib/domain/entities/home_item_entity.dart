@@ -20,3 +20,8 @@ class HomeItemEntity extends Equatable {
     required this.rating,
     required this.reviews,
     required this.iconName,
+  });
+
+  IconData get icon {
+    switch (iconName) {
+      case 'brush':

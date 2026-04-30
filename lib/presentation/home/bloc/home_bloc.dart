@@ -24,3 +24,5 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final GetCategoriesUseCase _getCategories;
   final GetHomeItemsUseCase _getHomeItems;
 
+  HomeBloc(
+    this._getTopCategories,

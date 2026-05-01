@@ -14,3 +14,7 @@ import '../repositories/i_home_repository.dart';
 class GetTopCategoriesUseCase implements UseCase<List<String>, NoParams> {
   final IHomeRepository repository;
 
+  GetTopCategoriesUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, List<String>>> call(NoParams params) async {

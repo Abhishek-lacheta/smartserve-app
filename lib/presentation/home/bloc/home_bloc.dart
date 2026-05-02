@@ -26,3 +26,9 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
 
   HomeBloc(
     this._getTopCategories,
+    this._getCategories,
+    this._getHomeItems,
+  ) : super(HomeInitial()) {
+    on<LoadHomeData>(_onLoadHomeData);
+
+

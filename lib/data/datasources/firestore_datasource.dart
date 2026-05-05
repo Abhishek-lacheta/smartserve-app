@@ -36,3 +36,10 @@ class FirestoreDataSource {
   }
 
   // Seed Firestore if Empty (to satisfy assignment requirements with exact UI)
+  Future<void> seedFirestoreIfEmpty() async {
+    try {
+      final productsSnapshot = await _firestore.collection('home_products').limit(1).get();
+      if (productsSnapshot.docs.isEmpty) {
+        // Seed Top Categories
+        for (int i = 0; i < MockData.topCategories.length; i++) {
+          await _firestore.collection('home_top_categories').add({

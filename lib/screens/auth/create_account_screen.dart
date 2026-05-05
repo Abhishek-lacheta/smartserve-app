@@ -25,3 +25,13 @@ class CreateAccountScreen extends StatelessWidget {
       listener: (context, state) {
         if (state is AuthAuthenticated) {
           ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('User details saved successfully'),
+              backgroundColor: Colors.green,
+            ),
+          );
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => const MainNavigation()),
+          );
+        } else if (state is AuthFailure) {

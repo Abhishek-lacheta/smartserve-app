@@ -20,3 +20,5 @@ class UserModel extends UserEntity {
       'uid': uid,
       'name': name,
       'email': email,
+      'profileImage': profileImage,
+    };

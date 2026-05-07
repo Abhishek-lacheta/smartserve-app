@@ -11,13 +11,3 @@ abstract class AuthState extends Equatable {
 }
 
 /// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-/// Provides core implementation and business logic properties.
-class AuthInitial extends AuthState {}

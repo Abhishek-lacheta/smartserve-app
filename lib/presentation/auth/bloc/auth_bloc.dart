@@ -13,3 +13,9 @@ import 'auth_state.dart';
 /// **Genius-Level Insight:**
 /// We don't just check the initial auth state once. We listen to the `authStateChanges` stream
 /// provided by Firebase. This means if the user is deleted on the server, or logs out from another
+/// tab/session, the app will reactively push an [Unauthenticated] state, immediately kicking them
+/// out of the protected routes.
+@injectable
+/// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.

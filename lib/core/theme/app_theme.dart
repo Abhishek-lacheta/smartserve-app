@@ -13,3 +13,6 @@ class AppTheme {
     return ThemeData(
       primaryColor: AppColors.primaryCyan,
       scaffoldBackgroundColor: AppColors.background,
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.primaryCyan,
+        secondary: AppColors.primaryOrange,

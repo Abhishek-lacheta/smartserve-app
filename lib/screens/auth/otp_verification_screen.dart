@@ -27,6 +27,3 @@ class OtpVerificationScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(24.0),

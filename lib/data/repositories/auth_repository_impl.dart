@@ -55,11 +55,3 @@ class AuthRepositoryImpl implements IAuthRepository {
     try {
       final user = await _authDataSource.signInWithGoogle();
       
-      if (user != null) {
-        final userModel = UserModel(
-          uid: user.uid,
-          name: user.displayName ?? 'Unknown User',
-          email: user.email ?? 'No email',
-          profileImage: user.photoURL,
-        );
-        

@@ -32,3 +32,12 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     on<LoadHomeData>(_onLoadHomeData);
 
 
+
+  }
+
+  Future<void> _onLoadHomeData(LoadHomeData event, Emitter<HomeState> emit) async {
+    emit(HomeLoading());
+
+    // Fire all requests concurrently for performance
+    final results = await Future.wait([
+      _getTopCategories(NoParams()),

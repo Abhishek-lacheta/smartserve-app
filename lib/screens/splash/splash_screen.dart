@@ -46,3 +46,9 @@ class _SplashScreenState extends State<SplashScreen> {
         context,
         MaterialPageRoute(builder: (context) => const OnboardingScreen()),
       );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(

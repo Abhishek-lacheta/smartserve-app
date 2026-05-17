@@ -25,3 +25,9 @@ class HomeItemEntity extends Equatable {
   IconData get icon {
     switch (iconName) {
       case 'brush':
+        return Icons.brush;
+      case 'color_lens':
+        return Icons.color_lens;
+      case 'spa':
+        return Icons.spa;
+      case 'water_drop':

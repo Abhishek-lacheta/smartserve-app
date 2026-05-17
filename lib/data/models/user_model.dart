@@ -22,11 +22,3 @@ class UserModel extends UserEntity {
       'email': email,
       'profileImage': profileImage,
     };
-
-
-
-  }
-
-  factory UserModel.fromMap(Map<String, dynamic> map, String documentId) {
-    return UserModel(
-      uid: documentId,

@@ -16,3 +16,6 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
         primary: AppColors.primaryCyan,
         secondary: AppColors.primaryOrange,
+        background: AppColors.background,
+        surface: AppColors.surface,
+      ),

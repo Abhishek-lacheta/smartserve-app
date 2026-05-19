@@ -21,3 +21,7 @@ class HomeRepositoryImpl implements IHomeRepository {
   @override
   Future<Either<Failure, List<String>>> getTopCategories() async {
     try {
+      final result = await _firestoreDataSource.getTopCategories();
+      return Right(result);
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));

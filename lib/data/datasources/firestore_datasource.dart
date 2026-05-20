@@ -43,3 +43,13 @@ class FirestoreDataSource {
         // Seed Top Categories
         for (int i = 0; i < MockData.topCategories.length; i++) {
           await _firestore.collection('home_top_categories').add({
+            'name': MockData.topCategories[i],
+            'order': i,
+          });
+        }
+
+        // Seed Categories
+        for (int i = 0; i < MockData.categories.length; i++) {
+          final cat = MockData.categories[i];
+          await _firestore.collection('home_categories').add({
+            'title': cat['title'],

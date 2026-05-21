@@ -19,3 +19,7 @@ import 'auth_state.dart';
 /// Manages state transitions and events for this feature block.
 /// Manages state transitions and events for this feature block.
 /// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+/// Manages state transitions and events for this feature block.
+class AuthBloc extends Bloc<AuthEvent, AuthState> {
+  final SignInWithGoogleUseCase _signInWithGoogleUseCase;

@@ -52,3 +52,9 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: AppColors.background,
+      body: Center(
+        child: LuxeLoftLogo(size: 80),
+      ),
+    );
+  }

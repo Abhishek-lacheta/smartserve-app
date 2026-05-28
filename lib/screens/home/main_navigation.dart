@@ -37,6 +37,3 @@ class _MainNavigationState extends State<MainNavigation> {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: AppColors.primaryOrange,
         unselectedItemColor: AppColors.iconGrey,
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home_filled),

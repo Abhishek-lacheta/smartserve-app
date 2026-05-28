@@ -31,3 +31,13 @@ class HomeItemEntity extends Equatable {
       case 'spa':
         return Icons.spa;
       case 'water_drop':
+        return Icons.water_drop;
+      default:
+        return Icons.shopping_bag;
+
+    }
+  }
+
+  @override
+  List<Object?> get props => [id, title, price, rating, reviews, iconName];
+}

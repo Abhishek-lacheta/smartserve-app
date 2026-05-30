@@ -16,13 +16,3 @@ class HomeRepository {
   HomeRepository({FirestoreDataSource? firestoreDataSource})
       : _firestoreDataSource = firestoreDataSource ?? FirestoreDataSource();
 
-  Future<List<String>> getTopCategories() async {
-    try {
-      return await _firestoreDataSource.getTopCategories();
-    } catch (e) {
-      throw Exception('Repository error fetching top categories: $e');
-
-
-
-
-

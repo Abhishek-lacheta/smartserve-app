@@ -20,3 +20,9 @@ class LuxeLoftLogo extends StatelessWidget {
       children: [
         // Custom L Shape using CustomPaint
         CustomPaint(
+          size: Size(size, size),
+          painter: _LShapePainter(),
+        ),
+        const SizedBox(width: 4),
+        // uxeLoft Text
+        Padding(

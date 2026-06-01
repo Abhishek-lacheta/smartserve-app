@@ -32,3 +32,12 @@ class AuthRepository {
         );
         
         // Save to Firestore
+        await _firestoreDataSource.saveUser(userModel);
+
+
+
+      }
+      
+      return user;
+    } catch (e) {
+      throw Exception('Repository error during Google Sign In: $e');

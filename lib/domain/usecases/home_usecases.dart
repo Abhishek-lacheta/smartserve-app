@@ -27,9 +27,3 @@ class GetTopCategoriesUseCase implements UseCase<List<String>, NoParams> {
   }
 }
 
-@injectable
-class GetCategoriesUseCase implements UseCase<List<CategoryEntity>, NoParams> {
-  final IHomeRepository repository;
-
-  GetCategoriesUseCase(this.repository);
-

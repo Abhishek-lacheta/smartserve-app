@@ -21,3 +21,13 @@ class HomeItemModel extends HomeItemEntity {
       'price': price,
       'rating': rating,
       'reviews': reviews,
+      'iconName': iconName,
+    };
+
+
+
+
+  }
+
+  factory HomeItemModel.fromMap(Map<String, dynamic> map, String documentId) {
+    return HomeItemModel(

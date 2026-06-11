@@ -49,8 +49,3 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     if (_currentPage < _onboardingData.length - 1) {
       _pageController.nextPage(
         duration: const Duration(milliseconds: 300),
-        curve: Curves.easeIn,
-      );
-    } else {
-      _navigateToLogin();
-    }

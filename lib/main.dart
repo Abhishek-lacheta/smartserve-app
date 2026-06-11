@@ -19,3 +19,7 @@ void main() async {
     );
   } catch (e) {
     debugPrint("Firebase initialization error: \$e");
+
+
+  }
+

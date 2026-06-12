@@ -41,3 +41,10 @@ class AuthRepository {
       return user;
     } catch (e) {
       throw Exception('Repository error during Google Sign In: $e');
+    }
+  }
+
+  Future<void> signOut() async {
+    return await _authDataSource.signOut();
+  }
+}

@@ -60,3 +60,10 @@ class ProductCard extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           color: AppColors.shadowColor,
+                          blurRadius: 4,
+                          offset: Offset(0, 2),
+                        ),
+                      ],
+                    ),
+                    child: const Icon(
+                      Icons.favorite_border,

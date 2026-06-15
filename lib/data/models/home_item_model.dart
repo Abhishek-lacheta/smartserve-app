@@ -25,9 +25,3 @@ class HomeItemModel extends HomeItemEntity {
     };
 
 
-
-
-  }
-
-  factory HomeItemModel.fromMap(Map<String, dynamic> map, String documentId) {
-    return HomeItemModel(

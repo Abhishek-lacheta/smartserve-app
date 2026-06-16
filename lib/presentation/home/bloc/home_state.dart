@@ -11,3 +11,13 @@ abstract class HomeState extends Equatable {
 
 }
 
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class HomeInitial extends HomeState {}
+
+class HomeLoading extends HomeState {}
+
+class HomeLoaded extends HomeState {
+  final List<String> topCategories;
+  final List<CategoryEntity> categories;

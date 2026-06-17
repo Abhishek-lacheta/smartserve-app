@@ -46,3 +46,12 @@ class GetCurrentUserUseCase {
 
   GetCurrentUserUseCase(this.repository);
 
+  UserEntity? call() {
+    return repository.currentUser;
+  }
+}
+
+@injectable
+class GetAuthStateChangesUseCase {
+  final IAuthRepository repository;
+

@@ -29,3 +29,10 @@ class SocialLoginButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
+          border: Border.all(color: AppColors.inputBorder, width: 1.5),
+          boxShadow: [
+            BoxShadow(
+              color: AppColors.shadowColor.withOpacity(0.05),
+              offset: const Offset(0, 4),
+              blurRadius: 10,
+            ),

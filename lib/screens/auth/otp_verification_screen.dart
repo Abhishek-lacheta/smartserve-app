@@ -41,3 +41,13 @@ class OtpVerificationScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
                 ),
+              ),
+              const SizedBox(height: 12),
+              const Text(
+                'Enter the verification code we just sent on your email address.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 14,
+                  color: AppColors.textSecondary,
+                  height: 1.5,
+                ),

@@ -21,3 +21,5 @@ class HomeLoading extends HomeState {}
 class HomeLoaded extends HomeState {
   final List<String> topCategories;
   final List<CategoryEntity> categories;
+  final List<HomeItemEntity> items;
+

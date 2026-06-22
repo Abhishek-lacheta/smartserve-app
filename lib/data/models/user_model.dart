@@ -14,11 +14,3 @@ class UserModel extends UserEntity {
     required super.email,
     super.profileImage,
   });
-
-  Map<String, dynamic> toMap() {
-    return {
-      'uid': uid,
-      'name': name,
-      'email': email,
-      'profileImage': profileImage,
-    };

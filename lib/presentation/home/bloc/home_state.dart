@@ -23,3 +23,8 @@ class HomeLoaded extends HomeState {
   final List<CategoryEntity> categories;
   final List<HomeItemEntity> items;
 
+  const HomeLoaded({
+    required this.topCategories,
+    required this.categories,
+    required this.items,
+  });

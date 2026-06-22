@@ -52,3 +52,11 @@ class AuthRepositoryImpl implements IAuthRepository {
 
   @override
   Future<Either<Failure, UserEntity>> signInWithGoogle() async {
+    try {
+      final user = await _authDataSource.signInWithGoogle();
+      
+      if (user != null) {
+        final userModel = UserModel(
+          uid: user.uid,
+          name: user.displayName ?? 'Unknown User',
+          email: user.email ?? 'No email',

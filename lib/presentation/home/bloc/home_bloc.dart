@@ -42,3 +42,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     final results = await Future.wait([
       _getTopCategories(NoParams()),
       _getCategories(NoParams()),
+      _getHomeItems(NoParams()),
+    ]);
+
+    final topCategoriesResult = results[0] as dynamic; // Either<Failure, List<String>>

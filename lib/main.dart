@@ -23,3 +23,12 @@ void main() async {
 
   }
 
+  // Initialize Dependency Injection
+  configureDependencies();
+
+  runApp(const MyApp());
+}
+
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.

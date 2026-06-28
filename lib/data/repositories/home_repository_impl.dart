@@ -25,3 +25,9 @@ class HomeRepositoryImpl implements IHomeRepository {
       return Right(result);
     } catch (e) {
       return Left(ServerFailure(e.toString()));
+
+
+
+
+
+

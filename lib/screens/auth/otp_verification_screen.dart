@@ -51,3 +51,7 @@ class OtpVerificationScreen extends StatelessWidget {
                   color: AppColors.textSecondary,
                   height: 1.5,
                 ),
+              ),
+              const SizedBox(height: 40),
+              
+              // OTP Input Boxes

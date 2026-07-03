@@ -60,3 +60,9 @@ class AuthRepositoryImpl implements IAuthRepository {
           uid: user.uid,
           name: user.displayName ?? 'Unknown User',
           email: user.email ?? 'No email',
+          profileImage: user.photoURL,
+        );
+        
+        await _firestoreDataSource.saveUser(userModel);
+        return Right(userModel);
+      } else {

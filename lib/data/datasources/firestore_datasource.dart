@@ -53,3 +53,11 @@ class FirestoreDataSource {
           final cat = MockData.categories[i];
           await _firestore.collection('home_categories').add({
             'title': cat['title'],
+            'iconName': _getIconName(cat['icon']),
+            'order': i,
+          });
+        }
+
+        // Seed Products
+        for (final prod in MockData.products) {
+          await _firestore.collection('home_products').add({

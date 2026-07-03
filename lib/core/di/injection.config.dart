@@ -37,8 +37,3 @@ extension GetItInjectableX on _i1.GetIt {
       environmentFilter,
     );
     final registerModule = _$RegisterModule();
-    gh.lazySingleton<_i3.FirebaseAuth>(() => registerModule.firebaseAuth);
-    gh.lazySingleton<_i2.FirebaseFirestore>(() => registerModule.firestore);
-    
-    gh.lazySingleton<_i5.FirebaseAuthDataSource>(
-        () => _i5.FirebaseAuthDataSource(firebaseAuth: gh<_i3.FirebaseAuth>()));

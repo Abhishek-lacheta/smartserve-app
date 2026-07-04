@@ -17,6 +17,3 @@ class FirebaseAuthDataSource {
 
   FirebaseAuthDataSource({FirebaseAuth? firebaseAuth})
     : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
-
-  Future<void> _ensureGoogleSignInInitialized() async {
-    if (!_isGoogleSignInInitialized) {

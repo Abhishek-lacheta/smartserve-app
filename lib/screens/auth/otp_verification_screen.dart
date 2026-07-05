@@ -55,3 +55,8 @@ class OtpVerificationScreen extends StatelessWidget {
               const SizedBox(height: 40),
               
               // OTP Input Boxes
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: List.generate(4, (index) {
+                  return Container(
+                    width: 60,

@@ -37,3 +37,6 @@ class HomeItemModel extends HomeItemEntity {
       rating: (map['rating'] is num) ? (map['rating'] as num).toDouble() : 0.0,
       reviews: (map['reviews'] is num) ? (map['reviews'] as num).toInt() : 0,
       iconName: map['iconName']?.toString() ?? 'brush',
+    );
+  }
+}

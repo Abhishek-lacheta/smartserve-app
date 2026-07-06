@@ -60,3 +60,13 @@ class OtpVerificationScreen extends StatelessWidget {
                 children: List.generate(4, (index) {
                   return Container(
                     width: 60,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(
+                        color: index == 0 ? AppColors.inputBorder : AppColors.inputBorder.withOpacity(0.5),
+                        width: 1.5,
+                      ),
+                      boxShadow: [
+                        BoxShadow(

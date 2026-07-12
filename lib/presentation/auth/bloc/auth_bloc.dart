@@ -23,3 +23,12 @@ import 'auth_state.dart';
 /// Manages state transitions and events for this feature block.
 class AuthBloc extends Bloc<AuthEvent, AuthState> {
   final SignInWithGoogleUseCase _signInWithGoogleUseCase;
+  final SignOutUseCase _signOutUseCase;
+  final GetAuthStateChangesUseCase _getAuthStateChangesUseCase;
+
+  AuthBloc(
+    this._signInWithGoogleUseCase,
+    this._signOutUseCase,
+    this._getAuthStateChangesUseCase,
+  ) : super(AuthInitial()) {
+    on<CheckAuthStatus>(_onCheckAuthStatus);

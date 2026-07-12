@@ -38,11 +38,3 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   Future<void> _onLoadHomeData(LoadHomeData event, Emitter<HomeState> emit) async {
     emit(HomeLoading());
 
-    // Fire all requests concurrently for performance
-    final results = await Future.wait([
-      _getTopCategories(NoParams()),
-      _getCategories(NoParams()),
-      _getHomeItems(NoParams()),
-    ]);
-
-    final topCategoriesResult = results[0] as dynamic; // Either<Failure, List<String>>

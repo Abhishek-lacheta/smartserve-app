@@ -28,3 +28,13 @@ class HomeLoaded extends HomeState {
     required this.categories,
     required this.items,
   });
+
+  @override
+  List<Object?> get props => [topCategories, categories, items];
+}
+
+class HomeError extends HomeState {
+  final String message;
+
+  const HomeError(this.message);
+

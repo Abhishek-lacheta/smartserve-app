@@ -26,3 +26,12 @@ class HomeRepository {
 
 
 
+
+
+
+    }
+  }
+
+  Future<List<CategoryModel>> getCategories() async {
+    try {
+      return await _firestoreDataSource.getCategories();

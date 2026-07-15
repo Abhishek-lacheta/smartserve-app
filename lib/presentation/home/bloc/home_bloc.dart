@@ -44,3 +44,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       _getCategories(NoParams()),
       _getHomeItems(NoParams()),
     ]);
+
+    final topCategoriesResult = results[0] as dynamic; // Either<Failure, List<String>>
+    final categoriesResult = results[1] as dynamic; // Either<Failure, List<CategoryEntity>>
+    final itemsResult = results[2] as dynamic; // Either<Failure, List<HomeItemEntity>>
+

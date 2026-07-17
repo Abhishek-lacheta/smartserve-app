@@ -58,10 +58,3 @@ class FirestoreDataSource {
           });
         }
 
-        // Seed Products
-        for (final prod in MockData.products) {
-          await _firestore.collection('home_products').add({
-            'title': prod['title'],
-            'price': prod['price'],
-            'rating': prod['rating'],
-            'reviews': prod['reviews'],

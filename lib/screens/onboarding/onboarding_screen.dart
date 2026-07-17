@@ -41,3 +41,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       'title': 'ONLINE PAYMENT',
       'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra quam elementum massa, viverra. Ut turpis consectetur.',
+      'icon': Icons.security,
+    },
+  ];
+
+  void _nextPage() {
+    if (_currentPage < _onboardingData.length - 1) {
+      _pageController.nextPage(
+        duration: const Duration(milliseconds: 300),
+        curve: Curves.easeIn,
+      );
+    } else {
+      _navigateToLogin();
+    }
+  }

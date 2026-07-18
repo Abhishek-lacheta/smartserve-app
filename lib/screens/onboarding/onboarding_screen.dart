@@ -55,3 +55,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
       _navigateToLogin();
     }
   }
+
+  void _navigateToLogin() {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginScreen()),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(

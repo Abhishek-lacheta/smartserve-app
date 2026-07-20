@@ -35,3 +35,12 @@ class HomeRepository {
   Future<List<CategoryModel>> getCategories() async {
     try {
       return await _firestoreDataSource.getCategories();
+    } catch (e) {
+      throw Exception('Repository error fetching categories: $e');
+    }
+  }
+
+  Future<List<HomeItemModel>> getHomeItems() async {
+    try {
+      return await _firestoreDataSource.getHomeItems();
+    } catch (e) {

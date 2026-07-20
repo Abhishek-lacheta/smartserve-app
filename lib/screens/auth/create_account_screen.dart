@@ -60,3 +60,16 @@ class CreateAccountScreen extends StatelessWidget {
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textPrimary,
+                ),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                'Sign Up',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+              const SizedBox(height: 50),
+              
+              // Email

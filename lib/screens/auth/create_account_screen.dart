@@ -73,3 +73,13 @@ class CreateAccountScreen extends StatelessWidget {
               const SizedBox(height: 50),
               
               // Email
+              const CustomTextField(
+                hintText: 'Email',
+                prefixIcon: Icon(Icons.email_outlined),
+                keyboardType: TextInputType.emailAddress,
+              ),
+              
+              // Password
+              const CustomTextField(
+                hintText: 'Special Characters',
+                prefixIcon: Icon(Icons.lock_outline),

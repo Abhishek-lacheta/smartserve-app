@@ -49,3 +49,10 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     final categoriesResult = results[1] as dynamic; // Either<Failure, List<CategoryEntity>>
     final itemsResult = results[2] as dynamic; // Either<Failure, List<HomeItemEntity>>
 
+    // If any request failed, emit Error.
+    if (topCategoriesResult.isLeft()) {
+      emit(HomeError(topCategoriesResult.getLeft().toNullable()!.message));
+      return;
+    }
+    if (categoriesResult.isLeft()) {
+      emit(HomeError(categoriesResult.getLeft().toNullable()!.message));

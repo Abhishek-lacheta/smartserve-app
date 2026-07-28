@@ -68,8 +68,3 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       backgroundColor: AppColors.primaryCyan,
       body: Column(
-        children: [
-          // Top Illustration Area
-          Expanded(
-            flex: 5,
-            child: PageView.builder(

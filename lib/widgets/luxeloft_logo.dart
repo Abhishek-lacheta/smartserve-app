@@ -26,3 +26,7 @@ class LuxeLoftLogo extends StatelessWidget {
         const SizedBox(width: 4),
         // uxeLoft Text
         Padding(
+          padding: EdgeInsets.only(bottom: size * 0.15),
+          child: Text(
+            'uxeLoft',
+            style: TextStyle(

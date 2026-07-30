@@ -38,3 +38,6 @@ class HomeError extends HomeState {
 
   const HomeError(this.message);
 
+  @override
+  List<Object?> get props => [message];
+}

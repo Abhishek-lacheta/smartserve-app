@@ -66,13 +66,3 @@ class ProductCard extends StatelessWidget {
                       ],
                     ),
                     child: const Icon(
-                      Icons.favorite_border,
-                      size: 16,
-                      color: AppColors.textPrimary,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Details Area

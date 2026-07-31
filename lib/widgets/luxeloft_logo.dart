@@ -30,3 +30,11 @@ class LuxeLoftLogo extends StatelessWidget {
           child: Text(
             'uxeLoft',
             style: TextStyle(
+              fontSize: size * 0.6,
+              fontWeight: FontWeight.w900,
+              color: AppColors.primaryOrange,
+              letterSpacing: -1,
+            ),
+          ),
+        ),
+      ],

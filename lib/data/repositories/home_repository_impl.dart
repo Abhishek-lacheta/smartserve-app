@@ -35,3 +35,6 @@ class HomeRepositoryImpl implements IHomeRepository {
     }
   }
 
+  @override
+  Future<Either<Failure, List<CategoryEntity>>> getCategories() async {
+    try {

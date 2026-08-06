@@ -32,3 +32,8 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     this._getAuthStateChangesUseCase,
   ) : super(AuthInitial()) {
     on<CheckAuthStatus>(_onCheckAuthStatus);
+    on<SignInRequested>(_onSignInRequested);
+    on<SignOutRequested>(_onSignOutRequested);
+
+
+

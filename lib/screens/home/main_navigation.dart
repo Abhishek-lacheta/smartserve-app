@@ -48,3 +48,6 @@ class _MainNavigationState extends State<MainNavigation> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_bubble_outline),
+            label: 'Message',
+          ),
+          BottomNavigationBarItem(

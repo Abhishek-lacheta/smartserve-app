@@ -56,3 +56,13 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     }
     if (categoriesResult.isLeft()) {
       emit(HomeError(categoriesResult.getLeft().toNullable()!.message));
+      return;
+    }
+    if (itemsResult.isLeft()) {
+      emit(HomeError(itemsResult.getLeft().toNullable()!.message));
+      return;
+    }
+
+    // All successful, emit Loaded.
+    emit(HomeLoaded(
+      topCategories: topCategoriesResult.getRight().toNullable()!,

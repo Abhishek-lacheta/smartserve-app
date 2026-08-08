@@ -30,3 +30,9 @@ class UserModel extends UserEntity {
   factory UserModel.fromMap(Map<String, dynamic> map, String documentId) {
     return UserModel(
       uid: documentId,
+      name: map['name']?.toString() ?? 'Unknown',
+      email: map['email']?.toString() ?? 'No email',
+      profileImage: map['profileImage']?.toString(),
+    );
+  }
+}

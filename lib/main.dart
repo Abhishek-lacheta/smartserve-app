@@ -32,3 +32,8 @@ void main() async {
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override

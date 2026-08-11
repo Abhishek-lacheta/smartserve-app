@@ -34,3 +34,13 @@ class LuxeLoftLogo extends StatelessWidget {
               fontWeight: FontWeight.w900,
               color: AppColors.primaryOrange,
               letterSpacing: -1,
+            ),
+          ),
+        ),
+      ],
+    );
+
+
+
+
+

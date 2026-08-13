@@ -6,3 +6,17 @@ import 'package:injectable/injectable.dart';
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
 /// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class FirebaseAuthDataSource {
+  final FirebaseAuth _firebaseAuth;
+  bool _isGoogleSignInInitialized = false;
+
+  FirebaseAuthDataSource({FirebaseAuth? firebaseAuth})
+    : _firebaseAuth = firebaseAuth ?? FirebaseAuth.instance;
+
+  Future<void> _ensureGoogleSignInInitialized() async {
+    if (!_isGoogleSignInInitialized) {

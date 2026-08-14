@@ -38,3 +38,7 @@ class HomeRepositoryImpl implements IHomeRepository {
   @override
   Future<Either<Failure, List<CategoryEntity>>> getCategories() async {
     try {
+      final result = await _firestoreDataSource.getCategories();
+      return Right(result); // CategoryModel extends CategoryEntity
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));

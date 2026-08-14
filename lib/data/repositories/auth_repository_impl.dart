@@ -64,8 +64,3 @@ class AuthRepositoryImpl implements IAuthRepository {
         );
         
         await _firestoreDataSource.saveUser(userModel);
-        return Right(userModel);
-      } else {
-        return const Left(AuthFailure('Google Sign In was canceled.'));
-      }
-    } catch (e) {

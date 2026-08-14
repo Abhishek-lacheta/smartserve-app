@@ -42,3 +42,5 @@ class HomeRepositoryImpl implements IHomeRepository {
       return Right(result); // CategoryModel extends CategoryEntity
     } catch (e) {
       return Left(ServerFailure(e.toString()));
+    }
+  }

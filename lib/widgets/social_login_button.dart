@@ -35,3 +35,12 @@ class SocialLoginButton extends StatelessWidget {
               color: AppColors.shadowColor.withOpacity(0.05),
               offset: const Offset(0, 4),
               blurRadius: 10,
+            ),
+          ],
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, size: 30, color: iconColor),
+            const SizedBox(height: 8),
+            Text(

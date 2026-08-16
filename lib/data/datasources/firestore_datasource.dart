@@ -66,3 +66,12 @@ class FirestoreDataSource {
             'rating': prod['rating'],
             'reviews': prod['reviews'],
             'iconName': _getIconName(prod['icon']),
+          });
+        }
+      }
+    } catch (e) {
+      debugPrint('Seed failed (probably due to security rules): $e');
+    }
+  }
+
+  String _getIconName(IconData icon) {

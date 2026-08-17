@@ -79,7 +79,3 @@ class CreateAccountScreen extends StatelessWidget {
                 keyboardType: TextInputType.emailAddress,
               ),
               
-              // Password
-              const CustomTextField(
-                hintText: 'Special Characters',
-                prefixIcon: Icon(Icons.lock_outline),

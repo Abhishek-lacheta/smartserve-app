@@ -79,3 +79,29 @@ class CreateAccountScreen extends StatelessWidget {
                 keyboardType: TextInputType.emailAddress,
               ),
               
+              // Password
+              const CustomTextField(
+                hintText: 'Special Characters',
+                prefixIcon: Icon(Icons.lock_outline),
+                suffixIcon: Icon(Icons.visibility_off_outlined),
+                obscureText: true,
+              ),
+              
+              // Repeat Password
+              const CustomTextField(
+                hintText: 'Repeat Password',
+                prefixIcon: Icon(Icons.lock_outline),
+                suffixIcon: Icon(Icons.visibility_off_outlined),
+                obscureText: true,
+              ),
+              
+              // Mobile Number
+              CustomTextField(
+                hintText: 'Mobile Number',
+                prefixIcon: Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Container(
+                        width: 24,

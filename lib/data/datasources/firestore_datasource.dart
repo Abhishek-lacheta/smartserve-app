@@ -75,3 +75,14 @@ class FirestoreDataSource {
   }
 
   String _getIconName(IconData icon) {
+    if (icon == Icons.face) return 'face';
+    if (icon == Icons.local_offer) return 'local_offer';
+    if (icon == Icons.checkroom) return 'checkroom';
+    if (icon == Icons.home) return 'home';
+    if (icon == Icons.dry_cleaning) return 'dry_cleaning';
+    if (icon == Icons.shopping_bag) return 'shopping_bag';
+    if (icon == Icons.accessibility_new) return 'accessibility_new';
+    if (icon == Icons.phone_iphone) return 'phone_iphone';
+    if (icon == Icons.brush) return 'brush';
+    if (icon == Icons.color_lens) return 'color_lens';
+    if (icon == Icons.spa) return 'spa';

@@ -100,3 +100,19 @@ class ProductCard extends StatelessWidget {
                       ),
                       child: const Row(
                         children: [
+                          Icon(Icons.shopping_cart_outlined, size: 12, color: Colors.white),
+                          SizedBox(width: 4),
+                          Text(
+                            'Add',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 4),

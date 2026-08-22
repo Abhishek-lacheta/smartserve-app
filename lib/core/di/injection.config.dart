@@ -44,3 +44,17 @@ extension GetItInjectableX on _i1.GetIt {
         () => _i5.FirebaseAuthDataSource(firebaseAuth: gh<_i3.FirebaseAuth>()));
     gh.lazySingleton<_i6.FirestoreDataSource>(
         () => _i6.FirestoreDataSource(firestore: gh<_i2.FirebaseFirestore>()));
+        
+    gh.lazySingleton<_i7.IAuthRepository>(() => _i8.AuthRepositoryImpl(
+          gh<_i5.FirebaseAuthDataSource>(),
+          gh<_i6.FirestoreDataSource>(),
+        ));
+    gh.lazySingleton<_i9.IHomeRepository>(
+        () => _i10.HomeRepositoryImpl(gh<_i6.FirestoreDataSource>()));
+        
+    gh.factory<_i11.SignInWithGoogleUseCase>(
+        () => _i11.SignInWithGoogleUseCase(gh<_i7.IAuthRepository>()));
+    gh.factory<_i11.SignOutUseCase>(
+        () => _i11.SignOutUseCase(gh<_i7.IAuthRepository>()));
+    gh.factory<_i11.GetCurrentUserUseCase>(
+        () => _i11.GetCurrentUserUseCase(gh<_i7.IAuthRepository>()));

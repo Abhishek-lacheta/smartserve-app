@@ -56,6 +56,3 @@ class GetAuthStateChangesUseCase {
   final IAuthRepository repository;
 
   GetAuthStateChangesUseCase(this.repository);
-
-  Stream<UserEntity?> call() {
-    return repository.authStateChanges;

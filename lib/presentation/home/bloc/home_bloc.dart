@@ -66,3 +66,8 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
     // All successful, emit Loaded.
     emit(HomeLoaded(
       topCategories: topCategoriesResult.getRight().toNullable()!,
+      categories: categoriesResult.getRight().toNullable()!,
+      items: itemsResult.getRight().toNullable()!,
+    ));
+  }
+}

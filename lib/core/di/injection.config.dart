@@ -53,8 +53,3 @@ extension GetItInjectableX on _i1.GetIt {
         () => _i10.HomeRepositoryImpl(gh<_i6.FirestoreDataSource>()));
         
     gh.factory<_i11.SignInWithGoogleUseCase>(
-        () => _i11.SignInWithGoogleUseCase(gh<_i7.IAuthRepository>()));
-    gh.factory<_i11.SignOutUseCase>(
-        () => _i11.SignOutUseCase(gh<_i7.IAuthRepository>()));
-    gh.factory<_i11.GetCurrentUserUseCase>(
-        () => _i11.GetCurrentUserUseCase(gh<_i7.IAuthRepository>()));

@@ -116,3 +116,16 @@ class ProductCard extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 4),
+                Text(
+                  price,
+                  style: const TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimary,
+                  ),
+                ),
+                const SizedBox(height: 8),
+                Row(
+                  children: [
+                    const Icon(Icons.star, size: 14, color: AppColors.primaryOrange),
+                    const SizedBox(width: 4),

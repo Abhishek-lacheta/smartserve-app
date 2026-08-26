@@ -68,3 +68,42 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       backgroundColor: AppColors.primaryCyan,
       body: Column(
+        children: [
+          // Top Illustration Area
+          Expanded(
+            flex: 5,
+            child: PageView.builder(
+              controller: _pageController,
+              onPageChanged: (index) {
+                setState(() {
+                  _currentPage = index;
+                });
+              },
+              itemCount: _onboardingData.length,
+              itemBuilder: (context, index) {
+                return Center(
+                  child: Icon(
+                    _onboardingData[index]['icon'],
+                    size: 150,
+                    color: Colors.white.withOpacity(0.8),
+                  ),
+                );
+              },
+            ),
+          ),
+          
+          // Bottom White Card
+          Expanded(
+            flex: 4,
+            child: Container(
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
+                ),
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
+              child: Column(
+                children: [

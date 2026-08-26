@@ -29,3 +29,24 @@ class AppTheme {
         bodyLarge: TextStyle(fontSize: 16, color: AppColors.textPrimary),
         bodyMedium: TextStyle(fontSize: 14, color: AppColors.textSecondary),
         labelLarge: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.white),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColors.inputBackground,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
+        hintStyle: const TextStyle(color: AppColors.iconGrey, fontSize: 14),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.inputBorder, width: 1.5),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.inputBorder, width: 1.5),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.primaryCyan, width: 1.5),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: Colors.red, width: 1.5),

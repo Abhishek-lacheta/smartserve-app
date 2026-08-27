@@ -44,3 +44,39 @@ class LuxeLoftLogo extends StatelessWidget {
 
 
 
+
+
+
+
+
+  }
+}
+
+class _LShapePainter extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()
+      ..color = AppColors.primaryCyan
+      ..style = PaintingStyle.fill;
+
+    final path = Path();
+    
+    // Starting top-left of the L
+    path.moveTo(0, 0);
+    // Draw straight down
+    path.lineTo(0, size.height);
+    // Draw straight right to bottom-right
+    path.lineTo(size.width, size.height);
+    // Draw slanted up-left to the inner corner
+    path.lineTo(size.width * 0.35, size.height * 0.65);
+    // Draw straight up to inner-top
+    path.lineTo(size.width * 0.35, size.height * 0.35);
+    // Slant to top-left to close? The screenshot shows a triangle pointing bottom right
+    // Let's approximate the 'L' shape from the logo:
+    // It looks like a tall triangle on the left and a shorter triangle on the bottom.
+    // Actually, it's an 'L' where the top left is sharp, bottom left is sharp, bottom right is sharp,
+    // inner corner is sharp, top inner corner is slanted towards top left.
+    path.reset();
+    path.moveTo(0, 0); // top left
+    path.lineTo(0, size.height); // bottom left
+    path.lineTo(size.width * 0.9, size.height); // bottom right (extends out)

@@ -48,3 +48,6 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        title: 'LuxeLoft',
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,

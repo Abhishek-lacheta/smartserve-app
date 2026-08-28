@@ -73,10 +73,3 @@ class _LShapePainter extends CustomPainter {
     path.lineTo(size.width * 0.35, size.height * 0.35);
     // Slant to top-left to close? The screenshot shows a triangle pointing bottom right
     // Let's approximate the 'L' shape from the logo:
-    // It looks like a tall triangle on the left and a shorter triangle on the bottom.
-    // Actually, it's an 'L' where the top left is sharp, bottom left is sharp, bottom right is sharp,
-    // inner corner is sharp, top inner corner is slanted towards top left.
-    path.reset();
-    path.moveTo(0, 0); // top left
-    path.lineTo(0, size.height); // bottom left
-    path.lineTo(size.width * 0.9, size.height); // bottom right (extends out)

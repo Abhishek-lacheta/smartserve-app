@@ -51,3 +51,8 @@ class MyApp extends StatelessWidget {
         title: 'LuxeLoft',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
+        home: const SplashScreen(),
+      ),
+    );
+  }
+}

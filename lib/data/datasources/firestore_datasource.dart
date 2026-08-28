@@ -86,3 +86,46 @@ class FirestoreDataSource {
     if (icon == Icons.brush) return 'brush';
     if (icon == Icons.color_lens) return 'color_lens';
     if (icon == Icons.spa) return 'spa';
+    if (icon == Icons.water_drop) return 'water_drop';
+    return 'category';
+  }
+
+  // Get Top Categories
+  Future<List<String>> getTopCategories() async {
+    try {
+      final QuerySnapshot snapshot = 
+          await _firestore.collection('home_top_categories').orderBy('order').get();
+
+      return snapshot.docs.map((doc) {
+        return (doc.data() as Map<String, dynamic>)['name'] as String? ?? '';
+      }).toList();
+    } catch (e) {
+      throw Exception('Failed to fetch top categories: $e');
+    }
+  }
+
+  // Get Categories
+  Future<List<CategoryModel>> getCategories() async {
+    try {
+      final QuerySnapshot snapshot = 
+          await _firestore.collection('home_categories').orderBy('order').get();
+
+      return snapshot.docs.map((doc) {
+        return CategoryModel.fromMap(
+          doc.data() as Map<String, dynamic>,
+          doc.id,
+        );
+      }).toList();
+    } catch (e) {
+      throw Exception('Failed to fetch categories: $e');
+    }
+  }
+
+  // Get Home Items (Products)
+  Future<List<HomeItemModel>> getHomeItems() async {
+    try {
+      final QuerySnapshot snapshot = 
+          await _firestore.collection('home_products').get();
+
+      return snapshot.docs.map((doc) {
+        return HomeItemModel.fromMap(

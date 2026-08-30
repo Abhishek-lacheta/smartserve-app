@@ -34,3 +34,46 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
     on<CheckAuthStatus>(_onCheckAuthStatus);
     on<SignInRequested>(_onSignInRequested);
     on<SignOutRequested>(_onSignOutRequested);
+
+
+
+
+
+  }
+
+  /// Listens to the auth stream. Reactive programming at its finest.
+  Future<void> _onCheckAuthStatus(CheckAuthStatus event, Emitter<AuthState> emit) async {
+    emit(AuthLoading());
+    await emit.forEach(
+      _getAuthStateChangesUseCase(),
+      onData: (user) {
+        if (user != null) {
+          return Authenticated(user);
+        } else {
+          return Unauthenticated();
+        }
+      },
+      onError: (_, __) => const AuthError("Failed to verify authentication status."),
+    );
+  }
+
+  Future<void> _onSignInRequested(SignInRequested event, Emitter<AuthState> emit) async {
+    emit(AuthLoading());
+    final result = await _signInWithGoogleUseCase(NoParams());
+    
+    result.fold(
+      (failure) => emit(AuthError(failure.message)),
+      (user) => emit(Authenticated(user)),
+    );
+  }
+
+  Future<void> _onSignOutRequested(SignOutRequested event, Emitter<AuthState> emit) async {
+    emit(AuthLoading());
+    final result = await _signOutUseCase(NoParams());
+    
+    result.fold(
+      (failure) => emit(AuthError(failure.message)),
+      (_) => emit(Unauthenticated()),
+    );
+  }
+}

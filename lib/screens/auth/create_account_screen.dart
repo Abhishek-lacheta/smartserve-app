@@ -105,3 +105,85 @@ class CreateAccountScreen extends StatelessWidget {
                     children: [
                       Container(
                         width: 24,
+                        height: 24,
+                        decoration: const BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.red,
+                        ),
+                        child: const Icon(Icons.star, size: 14, color: Colors.yellow),
+                      ),
+                      const SizedBox(width: 8),
+                      const Text('+244', style: TextStyle(color: AppColors.iconGrey)),
+                      const Icon(Icons.keyboard_arrow_down, color: AppColors.primaryOrange),
+                      const SizedBox(width: 8),
+                    ],
+                  ),
+                ),
+                keyboardType: TextInputType.phone,
+              ),
+              const SizedBox(height: 30),
+              
+              // Next Buttonap
+              CustomButton(
+                text: 'NEXT',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const OtpVerificationScreen(),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 40),
+              
+              // Social Login
+              const Text(
+                'Or Continue With',
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: AppColors.textPrimary,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SocialLoginButton(
+                    text: 'Apple',
+                    icon: Icons.apple,
+                    iconColor: Colors.black,
+                    onPressed: () {},
+                  ),
+                  const SizedBox(width: 15),
+                  BlocBuilder<AuthBloc, AuthState>(
+                    builder: (context, state) {
+                      return SocialLoginButton(
+                        text: 'Google',
+                        icon: Icons.g_mobiledata,
+                        iconColor: Colors.blue,
+                        onPressed: () {
+                          context.read<AuthBloc>().add(GoogleSignInRequested());
+                        },
+                      );
+                    },
+                  ),
+                  const SizedBox(width: 15),
+                  SocialLoginButton(
+                    text: 'Facebook',
+                    icon: Icons.facebook,
+                    iconColor: Colors.blue[800],
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+            ],
+          ),
+        ),
+      ),
+      ),
+    );
+  }
+}

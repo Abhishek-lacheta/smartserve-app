@@ -129,3 +129,12 @@ class FirestoreDataSource {
 
       return snapshot.docs.map((doc) {
         return HomeItemModel.fromMap(
+          doc.data() as Map<String, dynamic>,
+          doc.id,
+        );
+      }).toList();
+    } catch (e) {
+      throw Exception('Failed to fetch home data: $e');
+    }
+  }
+}

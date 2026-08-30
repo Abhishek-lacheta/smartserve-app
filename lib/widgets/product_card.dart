@@ -129,3 +129,37 @@ class ProductCard extends StatelessWidget {
                   children: [
                     const Icon(Icons.star, size: 14, color: AppColors.primaryOrange),
                     const SizedBox(width: 4),
+                    Text(
+                      rating.toString(),
+                      style: const TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        color: AppColors.textPrimary,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      '$reviews Reviews',
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    const Spacer(),
+                    const Icon(Icons.more_vert, size: 16, color: AppColors.iconGrey),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+
+
+
+
+
+
+  }
+}

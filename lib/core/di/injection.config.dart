@@ -67,3 +67,31 @@ extension GetItInjectableX on _i1.GetIt {
         () => _i12.GetCategoriesUseCase(gh<_i9.IHomeRepository>()));
     gh.factory<_i12.GetHomeItemsUseCase>(
         () => _i12.GetHomeItemsUseCase(gh<_i9.IHomeRepository>()));
+        
+    gh.factory<_i13.AuthBloc>(() => _i13.AuthBloc(
+          gh<_i11.SignInWithGoogleUseCase>(),
+          gh<_i11.SignOutUseCase>(),
+          gh<_i11.GetAuthStateChangesUseCase>(),
+        ));
+    gh.factory<_i14.HomeBloc>(() => _i14.HomeBloc(
+          gh<_i12.GetTopCategoriesUseCase>(),
+          gh<_i12.GetCategoriesUseCase>(),
+          gh<_i12.GetHomeItemsUseCase>(),
+        ));
+    return this;
+
+
+
+
+
+
+
+
+
+  }
+}
+
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+/// Provides core implementation and business logic properties.
+class _$RegisterModule extends _i15.RegisterModule {}

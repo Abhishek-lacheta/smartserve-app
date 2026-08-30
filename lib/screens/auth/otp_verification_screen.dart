@@ -77,3 +77,45 @@ class OtpVerificationScreen extends StatelessWidget {
                       ],
                     ),
                     alignment: Alignment.center,
+                    child: index == 0
+                        ? const Text(
+                            '1',
+                            style: TextStyle(
+                              fontSize: 24,
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.textPrimary,
+                            ),
+                          )
+                        : null,
+                  );
+                }),
+              ),
+              const SizedBox(height: 40),
+              
+              // Verify Button
+              CustomButton(
+                text: 'VERIFY',
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const MainNavigation(),
+                    ),
+                    (route) => false,
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+
+
+
+
+
+
+
+  }
+}

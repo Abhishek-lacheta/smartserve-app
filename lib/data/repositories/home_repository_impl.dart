@@ -44,3 +44,14 @@ class HomeRepositoryImpl implements IHomeRepository {
       return Left(ServerFailure(e.toString()));
     }
   }
+
+  @override
+  Future<Either<Failure, List<HomeItemEntity>>> getHomeItems() async {
+    try {
+      final result = await _firestoreDataSource.getHomeItems();
+      return Right(result); // HomeItemModel extends HomeItemEntity
+    } catch (e) {
+      return Left(ServerFailure(e.toString()));
+    }
+  }
+}

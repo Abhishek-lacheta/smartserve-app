@@ -55,3 +55,23 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for windows - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not supported for this platform.',
+        );
+    }
+  }
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDF6e6mu34s_-xmCQbi5OisICZYGHhP3Og',
+    appId: '1:395109495964:android:805a0a6ce1de1526856959',
+    messagingSenderId: '395109495964',
+    projectId: 'smartserve-c5991',
+    storageBucket: 'smartserve-c5991.firebasestorage.app',
+  );
+}

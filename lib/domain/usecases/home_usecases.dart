@@ -31,3 +31,22 @@ class GetTopCategoriesUseCase implements UseCase<List<String>, NoParams> {
 class GetCategoriesUseCase implements UseCase<List<CategoryEntity>, NoParams> {
   final IHomeRepository repository;
 
+  GetCategoriesUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, List<CategoryEntity>>> call(NoParams params) async {
+    return await repository.getCategories();
+  }
+}
+
+@injectable
+class GetHomeItemsUseCase implements UseCase<List<HomeItemEntity>, NoParams> {
+  final IHomeRepository repository;
+
+  GetHomeItemsUseCase(this.repository);
+
+  @override
+  Future<Either<Failure, List<HomeItemEntity>>> call(NoParams params) async {
+    return await repository.getHomeItems();
+  }
+}

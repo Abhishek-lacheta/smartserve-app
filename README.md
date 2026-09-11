@@ -21,9 +21,9 @@ LuxeLoft is a production-oriented mobile application that demonstrates modern Fl
 
 *(Add your screenshots to the `screenshots` folder)*
 
-| Splash Screen | Login | OTP Verification | Home Dashboard |
-|:---:|:---:|:---:|:---:|
-| ![Splash](screenshots/splash.png) | ![Login](screenshots/login.png) | ![OTP Verification](screenshots/otp.png) | ![Home Dashboard](screenshots/home.png) |
+| Splash Screen | Welcome | Login | OTP Verification | Home Dashboard |
+|:---:|:---:|:---:|:---:|:---:|
+| ![Splash](screenshots/splash.jpg) | ![Welcome](screenshots/onboarding.jpg) | ![Login](screenshots/login.jpg) | ![OTP Verification](screenshots/otp.jpg) | ![Home Dashboard](screenshots/Home.jpg) |
 
 ## 🛠️ Tech Stack
 

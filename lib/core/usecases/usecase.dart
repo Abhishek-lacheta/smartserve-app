@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:fpdart/fpdart.dart';
-import 'failure.dart';
+import '../error/failure.dart';
 
 /// Base interface for UseCases in the application.
 /// [Type] is the return type of the UseCase.

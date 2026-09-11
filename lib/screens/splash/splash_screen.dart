@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
     
     final authState = context.read<AuthBloc>().state;
     
-    if (authState is AuthAuthenticated) {
+    if (authState is Authenticated) {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const MainNavigation()),

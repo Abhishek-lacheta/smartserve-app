@@ -26,68 +26,71 @@ import '../../presentation/home/bloc/home_bloc.dart' as _i14;
 import 'register_module.dart' as _i15;
 
 extension GetItInjectableX on _i1.GetIt {
-// initializes the registration of main-scope dependencies inside of GetIt
+  // initializes the registration of main-scope dependencies inside of GetIt
   _i1.GetIt init({
     String? environment,
     _i4.EnvironmentFilter? environmentFilter,
   }) {
-    final gh = _i4.GetItHelper(
-      this,
-      environment,
-      environmentFilter,
-    );
+    final gh = _i4.GetItHelper(this, environment, environmentFilter);
     final registerModule = _$RegisterModule();
     gh.lazySingleton<_i3.FirebaseAuth>(() => registerModule.firebaseAuth);
     gh.lazySingleton<_i2.FirebaseFirestore>(() => registerModule.firestore);
-    
+
     gh.lazySingleton<_i5.FirebaseAuthDataSource>(
-        () => _i5.FirebaseAuthDataSource(firebaseAuth: gh<_i3.FirebaseAuth>()));
+      () => _i5.FirebaseAuthDataSource(firebaseAuth: gh<_i3.FirebaseAuth>()),
+    );
     gh.lazySingleton<_i6.FirestoreDataSource>(
-        () => _i6.FirestoreDataSource(firestore: gh<_i2.FirebaseFirestore>()));
-        
-    gh.lazySingleton<_i7.IAuthRepository>(() => _i8.AuthRepositoryImpl(
-          gh<_i5.FirebaseAuthDataSource>(),
-          gh<_i6.FirestoreDataSource>(),
-        ));
+      () => _i6.FirestoreDataSource(firestore: gh<_i2.FirebaseFirestore>()),
+    );
+
+    gh.lazySingleton<_i7.IAuthRepository>(
+      () => _i8.AuthRepositoryImpl(
+        gh<_i5.FirebaseAuthDataSource>(),
+        gh<_i6.FirestoreDataSource>(),
+      ),
+    );
     gh.lazySingleton<_i9.IHomeRepository>(
-        () => _i10.HomeRepositoryImpl(gh<_i6.FirestoreDataSource>()));
-        
+      () => _i10.HomeRepositoryImpl(gh<_i6.FirestoreDataSource>()),
+    );
+
     gh.factory<_i11.SignInWithGoogleUseCase>(
-        () => _i11.SignInWithGoogleUseCase(gh<_i7.IAuthRepository>()));
+      () => _i11.SignInWithGoogleUseCase(gh<_i7.IAuthRepository>()),
+    );
     gh.factory<_i11.SignOutUseCase>(
-        () => _i11.SignOutUseCase(gh<_i7.IAuthRepository>()));
+      () => _i11.SignOutUseCase(gh<_i7.IAuthRepository>()),
+    );
     gh.factory<_i11.GetCurrentUserUseCase>(
-        () => _i11.GetCurrentUserUseCase(gh<_i7.IAuthRepository>()));
+      () => _i11.GetCurrentUserUseCase(gh<_i7.IAuthRepository>()),
+    );
     gh.factory<_i11.GetAuthStateChangesUseCase>(
-        () => _i11.GetAuthStateChangesUseCase(gh<_i7.IAuthRepository>()));
-        
+      () => _i11.GetAuthStateChangesUseCase(gh<_i7.IAuthRepository>()),
+    );
+
     gh.factory<_i12.GetTopCategoriesUseCase>(
-        () => _i12.GetTopCategoriesUseCase(gh<_i9.IHomeRepository>()));
+      () => _i12.GetTopCategoriesUseCase(gh<_i9.IHomeRepository>()),
+    );
     gh.factory<_i12.GetCategoriesUseCase>(
-        () => _i12.GetCategoriesUseCase(gh<_i9.IHomeRepository>()));
+      () => _i12.GetCategoriesUseCase(gh<_i9.IHomeRepository>()),
+    );
     gh.factory<_i12.GetHomeItemsUseCase>(
-        () => _i12.GetHomeItemsUseCase(gh<_i9.IHomeRepository>()));
-        
-    gh.factory<_i13.AuthBloc>(() => _i13.AuthBloc(
-          gh<_i11.SignInWithGoogleUseCase>(),
-          gh<_i11.SignOutUseCase>(),
-          gh<_i11.GetAuthStateChangesUseCase>(),
-        ));
-    gh.factory<_i14.HomeBloc>(() => _i14.HomeBloc(
-          gh<_i12.GetTopCategoriesUseCase>(),
-          gh<_i12.GetCategoriesUseCase>(),
-          gh<_i12.GetHomeItemsUseCase>(),
-        ));
+      () => _i12.GetHomeItemsUseCase(gh<_i9.IHomeRepository>()),
+    );
+
+    gh.factory<_i13.AuthBloc>(
+      () => _i13.AuthBloc(
+        gh<_i11.SignInWithGoogleUseCase>(),
+        gh<_i11.SignOutUseCase>(),
+        gh<_i11.GetAuthStateChangesUseCase>(),
+      ),
+    );
+    gh.factory<_i14.HomeBloc>(
+      () => _i14.HomeBloc(
+        gh<_i12.GetTopCategoriesUseCase>(),
+        gh<_i12.GetCategoriesUseCase>(),
+        gh<_i12.GetHomeItemsUseCase>(),
+      ),
+    );
     return this;
-
-
-
-
-
-
-
-
-
   }
 }
 

@@ -23,7 +23,7 @@ class CreateAccountScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<AuthBloc, AuthState>(
       listener: (context, state) {
-        if (state is AuthAuthenticated) {
+        if (state is Authenticated) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text('User details saved successfully'),
@@ -34,7 +34,7 @@ class CreateAccountScreen extends StatelessWidget {
             context,
             MaterialPageRoute(builder: (context) => const MainNavigation()),
           );
-        } else if (state is AuthFailure) {
+        } else if (state is AuthError) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(state.message),
@@ -164,7 +164,7 @@ class CreateAccountScreen extends StatelessWidget {
                         icon: Icons.g_mobiledata,
                         iconColor: Colors.blue,
                         onPressed: () {
-                          context.read<AuthBloc>().add(GoogleSignInRequested());
+                          context.read<AuthBloc>().add(SignInRequested());
                         },
                       );
                     },
